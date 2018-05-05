@@ -12,12 +12,13 @@ This project is completed and still can be modified with several other features.
 ### Dependencies
 -----------------
 
-Install all the dependencies using `pip install -r requirements.txt` before using the script.
+Install all the dependencies using `sudo pip install -r requirements.txt` before using the script.
 
    * BeautifulSoup
    * requests
    * tabulate
    * fpdf
+   * lxml
 
 ### Usage
 -----------------

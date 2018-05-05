@@ -87,8 +87,10 @@ def search_channel(channel2):
    # print soup2
     s= soup2.find('tbody')
        # print s
+    count=0
     for items in s.find_all("tr"):
         #print items
+        if count==4 : continue
         a= items.contents[1].text
         a=a.encode('utf-8')
         b= items.contents[2].text
@@ -100,6 +102,7 @@ def search_channel(channel2):
         movie_time.append(b)
         movie_genre.append(c)
         movie_dur.append(d)
+        count=count+1
 
 
    

@@ -64,9 +64,9 @@ def pdf_save(data_movies,headers):
     pdf.cell(200, 10, txt="Tv Timings !",ln=1, align="C")
     #pdf.cell(200, 10, str(tabulate(data_movies,headers)),0,1, align="l")
     for data in data_movies:
-        str1 = "Movie: " + str(data[0]) + "  Time: " + str(data[1])+ "  Rating: " + str(data[2])
-        pdf.cell(200, 10, str1,0,1, align="l")
-    pdf.output('Rishav.pdf')
+        str1 = "Movie: " + str(data[0]) + "      Time: " + str(data[1]) + "      Genre: " + str(data[2]) + "      Rating: " + str(data[4])
+        pdf.cell(200, 10, str1,0,1, align="M")
+    pdf.output('list.pdf')
 
 def getBSoup(url):
     print'''
